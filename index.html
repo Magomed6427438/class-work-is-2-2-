@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<h2>Check Temperature</h2>
+
+<p>Enter the temperature:</p>
+
+<input id="temp" type="number">
+
+<button onclick="checkTemp()">Submit</button>
+
+<p id="message"></p>
+
+<script>
+function checkTemp() {
+  let temp = document.getElementById("temp").value;
+  let message = document.getElementById("message");
+
+  if (temp > 30) {
+    message.innerHTML = "Вы можете носить легкую одежду.";
+  } else if (temp > 20) {
+    message.innerHTML = "Вам следует надеть теплую одежду.";
+  } else if (temp < 10) {
+    message.innerHTML = "Сегодня холодно, тебе следует надеть зимнюю одежду.";
+  } else {
+    message.innerHTML = "Введите допустимую температуру.";
+  }
+}
+</script>
+
+</body>
+</html>
