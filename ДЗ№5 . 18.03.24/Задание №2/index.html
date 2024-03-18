@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости строительных материалов</title>
+</head>
+<body>
+    <label for="material-1">Материал 1:</label>
+    <input type="number" id="material-1-quantity" placeholder="Количество">
+    <input type="number" id="material-1-price" placeholder="Цена за единицу">
+    <br>
+    <label for="material-2">Материал 2:</label>
+    <input type="number" id="material-2-quantity" placeholder="Количество">
+    <input type="number" id="material-2-price" placeholder="Цена за единицу">
+    <br>
+    <label for="material-3">Материал 3:</label>
+    <input type="number" id="material-3-quantity" placeholder="Количество">
+    <input type="number" id="material-3-price" placeholder="Цена за единицу">
+    <br>
+    <script src="script.js"></script>
+    <button onclick="calculateMaterials()">Рассчитать стоимость материалов</button>
+    <div id="total-materials"></div>
+</body>
+</html>

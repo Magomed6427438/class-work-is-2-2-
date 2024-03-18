@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет стоимости услуг по ремонту автомобилей</title>
+</head>
+<body>
+    <label for="service-1">Услуга 1:</label>
+    <input type="number" id="service-1-quantity" placeholder="Количество">
+    <input type="number" id="service-1-price" placeholder="Цена за единицу">
+    <br>
+    <label for="service-2">Услуга 2:</label>
+    <input type="number" id="service-2-quantity" placeholder="Количество">
+    <input type="number" id="service-2-price" placeholder="Цена за единицу">
+    <br>
+    <label for="service-3">Услуга 3:</label>
+    <input type="number" id="service-3-quantity" placeholder="Количество">
+    <input type="number" id="service-3-price" placeholder="Цена за единицу">
+    <br>
+    <script src="script.js"></script>
+    <button onclick="calculateServices()">Рассчитать стоимость услуг</button>
+    <div id="total-services"></div>
