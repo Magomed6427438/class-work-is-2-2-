@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <label for="song">Введите название песни</label>
+        <input type="text" class="input" id="song"><br><br>
+
+        <label for="artist">Введите исполнителя</label>
+        <input type="text" class="input" id="artist"><br><br>
+
+        <label for="album">Введите название альбома</label>
+        <input type="text" class="input" id="album"><br><br>
+
+        <label for="genre">Введите жанр</label>
+        <input type="text" class="input" id="genre"><br><br>
+
+        <label for="duration">Введите продолжительность песни</label>
+        <input type="text" class="input" id="duration"><br><br>
+
+        <button onclick="saveData()" class="button" id="saveBtn">Сохранить</button>
+
+        <ui id="resultList"></ui>
+    </div>
+</body>
+</html>
